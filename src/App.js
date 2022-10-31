@@ -3,7 +3,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Sidebar, Topbar } from "./scenes/global";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
-import { Team, Contact, Invoices } from "./scenes";
+import { Team, Contact, Invoices, Form } from "./scenes";
 // import Form from "./scenes/dashboard";
 // import Bar from "./scenes/dashboard";
 // import Pie from "./scenes/dashboard";
@@ -28,10 +28,9 @@ function App() {
               <Route path="/team" element={<Team />} />
               <Route path="/contacts" element={<Contact />} />
               <Route path="/invoices" element={<Invoices />} />
-              {/* 
-              
-               
               <Route path="/form" element={<Form />} />
+              {/* 
+             
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
