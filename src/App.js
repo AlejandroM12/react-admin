@@ -3,7 +3,7 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Sidebar, Topbar } from "./scenes/global";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
-import { Team, Contact, Invoices, Form } from "./scenes";
+import { Team, Contact, Invoices, Form, Calendar } from "./scenes";
 // import Form from "./scenes/dashboard";
 // import Bar from "./scenes/dashboard";
 // import Pie from "./scenes/dashboard";
@@ -29,6 +29,7 @@ function App() {
               <Route path="/contacts" element={<Contact />} />
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
+              <Route path="/calendar" element={<Calendar />} />
               {/* 
              
               <Route path="/bar" element={<Bar />} />
@@ -36,7 +37,7 @@ function App() {
               <Route path="/line" element={<Line />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/geography" element={<Geography />} />
-              <Route path="/calendar" element={<Calendar />} /> */}
+               */}
             </Routes>
           </main>
         </div>
