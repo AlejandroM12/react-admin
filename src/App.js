@@ -3,7 +3,18 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Sidebar, Topbar } from "./scenes/global";
 import { Route, Routes } from "react-router-dom";
 import Dashboard from "./scenes/dashboard";
-import { Team, Contact, Invoices, Form, Calendar, Faq } from "./scenes";
+import {
+  Team,
+  Contact,
+  Invoices,
+  Form,
+  Calendar,
+  Faq,
+  Bar,
+  Pie,
+  Line,
+  Geography,
+} from "./scenes";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -24,14 +35,10 @@ function App() {
               <Route path="/form" element={<Form />} />
               <Route path="/calendar" element={<Calendar />} />
               <Route path="/faq" element={<Faq />} />
-              {/* 
-             
               <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
-              
               <Route path="/geography" element={<Geography />} />
-               */}
             </Routes>
           </main>
         </div>
